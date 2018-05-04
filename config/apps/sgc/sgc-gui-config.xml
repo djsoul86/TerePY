@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans 	xmlns="http://www.springframework.org/schema/beans"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xmlns:aop="http://www.springframework.org/schema/aop"
+		xmlns:tx="http://www.springframework.org/schema/tx"
+		xmlns:jee="http://www.springframework.org/schema/jee"
+		xmlns:client="http://www.restclient.org/schema/client"
+		xsi:schemaLocation="
+			http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+			http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-3.0.xsd
+			http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.0.xsd
+			http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee-2.0.xsd
+			http://www.restclient.org/schema/client http://www.restclient.org/schema/client/client.xsd">
+
+
+	<!-- the main application context aware container -->
+	<bean id="applicationContextProvider" class="py.com.jdcm.sgc.config.ConfigApplicationContextProvider" />
+
+	<bean id="GUIConfig" class="py.com.jdcm.sgc.config.GuiConfig" >
+		<property name="appName" value="sgc"></property>
+		<property name="decimalDigits" value="0"></property>
+		<property name="decimalSeparator" value="COMMA"></property>
+		<property name="integerDigits" value="1"></property>
+		<property name="integerSeparator" value="POINT"></property>
+		<property name="dateRange" value="30"></property>
+		<property name="controlGuia" value="false"></property>
+        	<property name="fraccionado" value="true"></property>
+	</bean>	
+
+
+	<bean id="restClient" class="py.com.sif.rest.client.spring.request.ClientRequestBuilder" init-method="init" scope="prototype">
+		<property name="serversConfig">
+		   <client:serversConfig>
+				<client:serverInstance 
+					serverId="courrierAdminUrlProvider" 
+					url="http://7.48.6.81:8080/courrier-rest" 
+					defaultInstance="true" 
+					requireAuthentication="true" 
+					userName="courrier-rest" 
+					userPass="cou76Yt" 
+					timeout="180000">
+				</client:serverInstance>
+		   </client:serversConfig>
+		</property>
+		<property name="interceptors">
+			<list>
+				<bean class="py.com.jdcm.sgc.interceptors.RequestInterceptor"></bean>
+			</list>
+		</property>		
+	</bean>	
+
+</beans>
+

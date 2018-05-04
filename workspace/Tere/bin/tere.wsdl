@@ -1,0 +1,117 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<wsdl:definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsaws="http://www.w3.org/2005/08/addressing" xmlns:tns="http://aduana.gov.py/webservices" xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" name="serviciotere" targetNamespace="http://aduana.gov.py/webservices">  
+<wsdl:types><schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsaws="http://www.w3.org/2005/08/addressing" xmlns:tns="http://aduana.gov.py/webservices" xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns="http://www.w3.org/2001/XMLSchema"><import namespace="http://aduana.gov.py/webservices" schemaLocation="https://secure.aduana.gov.py/test/tere2/serviciotere?xsd=serviciotere_schema1.xsd"/></schema>  </wsdl:types>  
+<wsdl:message name="agregarGuiaResponse">    
+<wsdl:part element="tns:agregarGuiaResponse" name="parameters">    </wsdl:part>  </wsdl:message>  
+<wsdl:message name="enviarFactura">    
+<wsdl:part element="tns:enviarFactura" name="parameters">    </wsdl:part>  </wsdl:message>  
+<wsdl:message name="consultaInfoGuiasResponse">    
+<wsdl:part element="tns:consultaInfoGuiasResponse" name="parameters">    </wsdl:part>  </wsdl:message>  
+<wsdl:message name="consultaGuiaResponse">    
+<wsdl:part element="tns:consultaGuiaResponse" name="parameters">    </wsdl:part>  </wsdl:message>  
+<wsdl:message name="modificarFraccionadoResponse">    
+<wsdl:part element="tns:modificarFraccionadoResponse" name="parameters">    </wsdl:part>  </wsdl:message>  
+<wsdl:message name="consultaGuia">    
+<wsdl:part element="tns:consultaGuia" name="parameters">    </wsdl:part>  </wsdl:message>  
+<wsdl:message name="anularLoteResponse">    
+<wsdl:part element="tns:anularLoteResponse" name="parameters">    </wsdl:part>  </wsdl:message>  
+<wsdl:message name="consultaInfoGuias">    
+<wsdl:part element="tns:consultaInfoGuias" name="parameters">    </wsdl:part>  </wsdl:message>  
+<wsdl:message name="enviarFacturaResponse">    
+<wsdl:part element="tns:enviarFacturaResponse" name="parameters">    </wsdl:part>  </wsdl:message>  
+<wsdl:message name="asignarManifiesto">    
+<wsdl:part element="tns:asignarManifiesto" name="parameters">    </wsdl:part>  </wsdl:message>  
+<wsdl:message name="impresionImpuestoDSResponse">    
+<wsdl:part element="tns:impresionImpuestoDSResponse" name="parameters">    </wsdl:part>  </wsdl:message>  
+<wsdl:message name="ingresoDeposito">    
+<wsdl:part element="tns:ingresoDeposito" name="parameters">    </wsdl:part>  </wsdl:message>  
+<wsdl:message name="consultaManifiestoResponse">    
+<wsdl:part element="tns:consultaManifiestoResponse" name="parameters">    </wsdl:part>  </wsdl:message>  
+<wsdl:message name="modificarFraccionado">    
+<wsdl:part element="tns:modificarFraccionado" name="parameters">    </wsdl:part>  </wsdl:message>  
+<wsdl:message name="anularLote">    
+<wsdl:part element="tns:anularLote" name="parameters">    </wsdl:part>  </wsdl:message>  
+<wsdl:message name="asignarManifiestoResponse">    
+<wsdl:part element="tns:asignarManifiestoResponse" name="parameters">    </wsdl:part>  </wsdl:message>  
+<wsdl:message name="agregarGuia">    
+<wsdl:part element="tns:agregarGuia" name="parameters">    </wsdl:part>  </wsdl:message>  
+<wsdl:message name="consultarListaGuias">    
+<wsdl:part element="tns:consultarListaGuias" name="parameters">    </wsdl:part>  </wsdl:message>  
+<wsdl:message name="consultarListaGuiasResponse">    
+<wsdl:part element="tns:consultarListaGuiasResponse" name="parameters">    </wsdl:part>  </wsdl:message>  
+<wsdl:message name="consultaManifiesto">    
+<wsdl:part element="tns:consultaManifiesto" name="parameters">    </wsdl:part>  </wsdl:message>  
+<wsdl:message name="ingresoDepositoResponse">    
+<wsdl:part element="tns:ingresoDepositoResponse" name="parameters">    </wsdl:part>  </wsdl:message>  
+<wsdl:message name="impresionImpuestoDS">    
+<wsdl:part element="tns:impresionImpuestoDS" name="parameters">    </wsdl:part>  </wsdl:message>  
+<wsdl:portType name="serviciotereSoap">    
+<wsdl:operation name="anularLote">      
+<wsdl:input message="tns:anularLote" name="anularLote">    </wsdl:input>      
+<wsdl:output message="tns:anularLoteResponse" name="anularLoteResponse">    </wsdl:output>    </wsdl:operation>    
+<wsdl:operation name="consultaGuia">      
+<wsdl:input message="tns:consultaGuia" name="consultaGuia">    </wsdl:input>      
+<wsdl:output message="tns:consultaGuiaResponse" name="consultaGuiaResponse">    </wsdl:output>    </wsdl:operation>    
+<wsdl:operation name="enviarFactura">      
+<wsdl:input message="tns:enviarFactura" name="enviarFactura">    </wsdl:input>      
+<wsdl:output message="tns:enviarFacturaResponse" name="enviarFacturaResponse">    </wsdl:output>    </wsdl:operation>    
+<wsdl:operation name="consultarListaGuias">      
+<wsdl:input message="tns:consultarListaGuias" name="consultarListaGuias">    </wsdl:input>      
+<wsdl:output message="tns:consultarListaGuiasResponse" name="consultarListaGuiasResponse">    </wsdl:output>    </wsdl:operation>    
+<wsdl:operation name="asignarManifiesto">      
+<wsdl:input message="tns:asignarManifiesto" name="asignarManifiesto">    </wsdl:input>      
+<wsdl:output message="tns:asignarManifiestoResponse" name="asignarManifiestoResponse">    </wsdl:output>    </wsdl:operation>    
+<wsdl:operation name="consultaInfoGuias">      
+<wsdl:input message="tns:consultaInfoGuias" name="consultaInfoGuias">    </wsdl:input>      
+<wsdl:output message="tns:consultaInfoGuiasResponse" name="consultaInfoGuiasResponse">    </wsdl:output>    </wsdl:operation>    
+<wsdl:operation name="modificarFraccionado">      
+<wsdl:input message="tns:modificarFraccionado" name="modificarFraccionado">    </wsdl:input>      
+<wsdl:output message="tns:modificarFraccionadoResponse" name="modificarFraccionadoResponse">    </wsdl:output>    </wsdl:operation>    
+<wsdl:operation name="impresionImpuestoDS">      
+<wsdl:input message="tns:impresionImpuestoDS" name="impresionImpuestoDS">    </wsdl:input>      
+<wsdl:output message="tns:impresionImpuestoDSResponse" name="impresionImpuestoDSResponse">    </wsdl:output>    </wsdl:operation>    
+<wsdl:operation name="agregarGuia">      
+<wsdl:input message="tns:agregarGuia" name="agregarGuia">    </wsdl:input>      
+<wsdl:output message="tns:agregarGuiaResponse" name="agregarGuiaResponse">    </wsdl:output>    </wsdl:operation>    
+<wsdl:operation name="ingresoDeposito">      
+<wsdl:input message="tns:ingresoDeposito" name="ingresoDeposito">    </wsdl:input>      
+<wsdl:output message="tns:ingresoDepositoResponse" name="ingresoDepositoResponse">    </wsdl:output>    </wsdl:operation>    
+<wsdl:operation name="consultaManifiesto">      
+<wsdl:input message="tns:consultaManifiesto" name="consultaManifiesto">    </wsdl:input>      
+<wsdl:output message="tns:consultaManifiestoResponse" name="consultaManifiestoResponse">    </wsdl:output>    </wsdl:operation>  </wsdl:portType>  
+<wsdl:binding name="serviciotereSoapBinding" type="tns:serviciotereSoap">    <wsp:PolicyReference URI="#SecurityServiceSignThenEncryptPolicy"/>    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>    
+<wsdl:operation name="anularLote">      <soap:operation soapAction="" style="document"/>      
+<wsdl:input name="anularLote">        <soap:body use="literal"/>      </wsdl:input>      
+<wsdl:output name="anularLoteResponse">        <soap:body use="literal"/>      </wsdl:output>    </wsdl:operation>    
+<wsdl:operation name="consultaGuia">      <soap:operation soapAction="" style="document"/>      
+<wsdl:input name="consultaGuia">        <soap:body use="literal"/>      </wsdl:input>      
+<wsdl:output name="consultaGuiaResponse">        <soap:body use="literal"/>      </wsdl:output>    </wsdl:operation>    
+<wsdl:operation name="asignarManifiesto">      <soap:operation soapAction="" style="document"/>      
+<wsdl:input name="asignarManifiesto">        <soap:body use="literal"/>      </wsdl:input>      
+<wsdl:output name="asignarManifiestoResponse">        <soap:body use="literal"/>      </wsdl:output>    </wsdl:operation>    
+<wsdl:operation name="consultarListaGuias">      <soap:operation soapAction="" style="document"/>      
+<wsdl:input name="consultarListaGuias">        <soap:body use="literal"/>      </wsdl:input>      
+<wsdl:output name="consultarListaGuiasResponse">        <soap:body use="literal"/>      </wsdl:output>    </wsdl:operation>    
+<wsdl:operation name="enviarFactura">      <soap:operation soapAction="" style="document"/>      
+<wsdl:input name="enviarFactura">        <soap:body use="literal"/>      </wsdl:input>      
+<wsdl:output name="enviarFacturaResponse">        <soap:body use="literal"/>      </wsdl:output>    </wsdl:operation>    
+<wsdl:operation name="consultaInfoGuias">      <soap:operation soapAction="" style="document"/>      
+<wsdl:input name="consultaInfoGuias">        <soap:body use="literal"/>      </wsdl:input>      
+<wsdl:output name="consultaInfoGuiasResponse">        <soap:body use="literal"/>      </wsdl:output>    </wsdl:operation>    
+<wsdl:operation name="agregarGuia">      <soap:operation soapAction="" style="document"/>      
+<wsdl:input name="agregarGuia">        <soap:body use="literal"/>      </wsdl:input>      
+<wsdl:output name="agregarGuiaResponse">        <soap:body use="literal"/>      </wsdl:output>    </wsdl:operation>    
+<wsdl:operation name="impresionImpuestoDS">      <soap:operation soapAction="" style="document"/>      
+<wsdl:input name="impresionImpuestoDS">        <soap:body use="literal"/>      </wsdl:input>      
+<wsdl:output name="impresionImpuestoDSResponse">        <soap:body use="literal"/>      </wsdl:output>    </wsdl:operation>    
+<wsdl:operation name="modificarFraccionado">      <soap:operation soapAction="" style="document"/>      
+<wsdl:input name="modificarFraccionado">        <soap:body use="literal"/>      </wsdl:input>      
+<wsdl:output name="modificarFraccionadoResponse">        <soap:body use="literal"/>      </wsdl:output>    </wsdl:operation>    
+<wsdl:operation name="consultaManifiesto">      <soap:operation soapAction="" style="document"/>      
+<wsdl:input name="consultaManifiesto">        <soap:body use="literal"/>      </wsdl:input>      
+<wsdl:output name="consultaManifiestoResponse">        <soap:body use="literal"/>      </wsdl:output>    </wsdl:operation>    
+<wsdl:operation name="ingresoDeposito">      <soap:operation soapAction="" style="document"/>      
+<wsdl:input name="ingresoDeposito">        <soap:body use="literal"/>      </wsdl:input>      
+<wsdl:output name="ingresoDepositoResponse">        <soap:body use="literal"/>      </wsdl:output>    </wsdl:operation>  </wsdl:binding>  
+<wsdl:service name="serviciotere">    
+<wsdl:port binding="tns:serviciotereSoapBinding" name="serviciotereSoap">      <soap:address location="https://secure.aduana.gov.py/test/tere2/serviciotere"/>    </wsdl:port>  </wsdl:service>    <wsp:Policy xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy" wsu:Id="SecurityServiceSignThenEncryptPolicy">    <wsp:ExactlyOne>      <wsp:All>        <sp:AsymmetricBinding xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">          <wsp:Policy>            <sp:InitiatorToken>              <wsp:Policy>                <sp:X509Token sp:IncludeToken="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy/IncludeToken/AlwaysToRecipient">                  <wsp:Policy>                    <sp:WssX509V1Token11/>                  </wsp:Policy>                  </sp:X509Token>              </wsp:Policy>            </sp:InitiatorToken>            <sp:RecipientToken>              <wsp:Policy>                <sp:X509Token sp:IncludeToken="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy/IncludeToken/Never">                  <wsp:Policy>                    <sp:WssX509V1Token11/>                  </wsp:Policy>                </sp:X509Token>              </wsp:Policy>            </sp:RecipientToken>            <sp:AlgorithmSuite>              <wsp:Policy>                <sp:TripleDesRsa15/>              </wsp:Policy>            </sp:AlgorithmSuite>            <sp:Layout>              <wsp:Policy>                <sp:Lax/>              </wsp:Policy>            </sp:Layout>            <sp:IncludeTimestamp/>            <sp:EncryptSignature/>            <sp:OnlySignEntireHeadersAndBody/>            <sp:SignBeforeEncrypting/>          </wsp:Policy>        </sp:AsymmetricBinding>        <sp:SignedParts xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">          <sp:Body/>        </sp:SignedParts>        <sp:EncryptedParts xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">          <sp:Body/>        </sp:EncryptedParts>        <sp:Wss10 xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">          <wsp:Policy>            <sp:MustSupportRefIssuerSerial/>          </wsp:Policy>        </sp:Wss10>      </wsp:All>    </wsp:ExactlyOne>  </wsp:Policy></wsdl:definitions>

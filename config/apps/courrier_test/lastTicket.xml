@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<loginTicketResponse version="1.0">
+	<header>
+		<source>C=py, O=dna, OU=sofia, CN=wsaatest</source>
+		<destination>C=py, O=ti, OU=dhl, CN=800048660</destination>
+		<uniqueId>1502719448</uniqueId>
+		<generationTime>2017-08-14T10:04:08.842-04:00</generationTime>
+		<expirationTime>2017-08-14T22:04:08.842-04:00</expirationTime>
+	</header>
+	<credentials>
+		<token>CjxhdXRoPgoJPGlkIHVuaXF1ZV9pZD0iMTUwMjcxOTI1MiIgc3JjPSJDPXB5LCBPPWRuYSwgT1U9c29maWEsIENOPXdzYWF0ZXN0IiBnZW5fdGltZT0iMjAxNy0wOC0xNFQwOTowMDo1Mi42NTctMDU6MDAiIGV4cF90aW1lPSIyMDE3LTA4LTE0VDEwOjAwOjUyLjY1Ny0wNTowMCIvPgoJPG9wZXJhdGlvbiB2YWx1ZT0iZ3JhbnRlZCIgdHlwZT0ibG9naW4iPgoJCTxsb2dpbiB1aWQ9IkM9cHksIE89dGksIE9VPWRobCwgQ049ODAwMDQ4NjYwIiBzZXJ2aWNlPSJzZXJ2aWNpb3RlcmUiIGF1dGhtZXRob2Q9ImNtcyI+CgkJPC9sb2dpbj4KCTwvb3BlcmF0aW9uPgo8L2F1dGg+Cg==</token>
+		<sign>IkuUY70XAe36oF6c+Jt1hHg7GYC+yrEs9Ew+/jiCI93V+Y+ECex3ghgXn/h8pxl4yFd6IanMDOTKGkmR0H6zO4yM2ZM4N1Z1qKZ9mDx+IQ/vm4JalrD+iUAreisnzlPd8zn0ZW4Q++5SFWgADnsXCUmByRK4h+Eu6s8X12Sumoc=</sign>
+	</credentials>
+</loginTicketResponse>
